@@ -1,0 +1,15 @@
+
+<h1>OUR ATTENDEES :D</h1>
+
+<table style="margin-left: 100px; margin-top: 50px">                         
+  <tr>                          
+    <th>firstname</th>
+    <th>lastname</th>
+  </tr>
+<% @data.each do |data| %>
+  <tr>
+    <td><%= data.firstname %></td> 
+    <td><%= data.lastname %></td>
+  </tr>
+<% end %>
+</table> 

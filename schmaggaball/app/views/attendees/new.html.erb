@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>RSVP: ShmaggaBall</title>
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Hind:300|Tangerine" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<script src="js/scripts.js"></script>
+		<div class="body--wrapper">
+			<div class="title--wrapper">
+				<div class="title--header">
+					<h2>Shmaggajagga Masquerade Ball</h2>
+				</div>
+			</div>
+
+			<div class="form--wrapper">
+
+				<%= form_for(@attendee) do |f| %>
+
+	      			<%= f.text_field :firstname, class: "form--first-name", placeholder: "First name" %>
+
+	      			<%= f.text_field :lastname, class: "form--last-name", placeholder: "Last name" %>
+	      			
+	      			<div class="form--submit--wrapper">
+	      				<%= f.submit "Count me in", class: "form--submit" %>
+	      			</div>
+    			<% end %>
+			</div>
+		</div>
+	</body>
+</html>

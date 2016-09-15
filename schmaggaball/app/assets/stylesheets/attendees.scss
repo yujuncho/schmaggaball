@@ -1,0 +1,90 @@
+// Place all the styles related to the Attendees controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body, html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+}
+
+.body--wrapper {
+	background-color: black;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+
+.title--wrapper {
+	text-align: center;
+	font-family: 'Tangerine', cursive;
+}
+
+.title--header h2 {
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.form--wrapper {
+	display: flex;
+	font-family: 'Hind', sans-serif;
+}
+
+form {
+	margin: 10px auto;
+}
+
+input {
+	margin-bottom: 20px;
+}
+
+input[type=text] {
+	width: 250px;
+	display: block;
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid white;
+	background: transparent;
+	color: white;
+	font-family: 'Hind', sans-serif;
+	font-size: 1em;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+:-moz-placeholder {
+	color: white;
+}
+
+::-moz-placeholder {
+	color: white;
+}
+
+:-ms-input-placeholder {
+	color: white;
+}
+
+.form--submit--wrapper {
+	text-align: center;
+}
+
+.form--submit:hover {
+	cursor: pointer;
+}
+
+.form--submit {
+	width: 150px;
+	margin-top: 20px;
+	outline: 0;
+	border: 1px solid white;
+	border-radius: 12px;
+	background: transparent;
+	color: white;
+	font-family: 'Hind', sans-serif;
+	font-size: 1em;
+}
